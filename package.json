@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "A CSS-to-JSObject converter based on postcss-js",
   "main": "dist/index.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava --verbose"
   },
   "keywords": [
     "CSS-to-JS",
@@ -15,7 +16,11 @@
     "postcss-js",
     "js object"
   ],
-  "author": "therufa <therufa@gmail.com>",
+  "author": {
+    "name": "Attila Max Ruf",
+    "email": "therufa@gmail.com",
+    "url": "https://ruf.hu/"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.15.0",
@@ -28,13 +33,14 @@
     "postcss": "^8.4.21",
     "postcss-js": "^4.0.1"
   },
+  "sideEffects": "false",
   "ava": {
     "files": [
       "test/*.ts"
     ],
-    "extensions": [
-      "ts"
-    ],
+    "extensions": {
+      "ts": "commonjs"
+    },
     "require": [
       "ts-node/register"
     ]
