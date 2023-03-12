@@ -1,0 +1,23 @@
+{
+  "name": "StyleBridge",
+  "version": "1.0.0",
+  "description": "A CSS-to-JSObject converter based on postcss-js",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CSS-to-JS",
+    "JSS",
+    "convert",
+    "css",
+    "style",
+    "postcss-js",
+    "js object"
+  ],
+  "author": "therufa <therufa@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
