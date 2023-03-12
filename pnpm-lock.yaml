@@ -1,12 +1,57 @@
 lockfileVersion: 5.4
 
 specifiers:
+  postcss: ^8.4.21
+  postcss-js: ^4.0.1
   typescript: ^4.9.5
+
+dependencies:
+  postcss: 8.4.21
+  postcss-js: 4.0.1_postcss@8.4.21
 
 devDependencies:
   typescript: 4.9.5
 
 packages:
+
+  /camelcase-css/2.0.1:
+    resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==}
+    engines: {node: '>= 6'}
+    dev: false
+
+  /nanoid/3.3.4:
+    resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+    dev: false
+
+  /picocolors/1.0.0:
+    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
+    dev: false
+
+  /postcss-js/4.0.1_postcss@8.4.21:
+    resolution: {integrity: sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==}
+    engines: {node: ^12 || ^14 || >= 16}
+    peerDependencies:
+      postcss: ^8.4.21
+    dependencies:
+      camelcase-css: 2.0.1
+      postcss: 8.4.21
+    dev: false
+
+  /postcss/8.4.21:
+    resolution: {integrity: sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.4
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+    dev: false
+
+  /source-map-js/1.0.2:
+    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
+    engines: {node: '>=0.10.0'}
+    dev: false
 
   /typescript/4.9.5:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}

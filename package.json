@@ -19,5 +19,9 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "postcss": "^8.4.21",
+    "postcss-js": "^4.0.1"
   }
 }
