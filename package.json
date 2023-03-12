@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "type": "commonjs",
   "scripts": {
-    "test": "eslint . && ava"
+    "test": "eslint . && ava",
+    "build": "tsc -b",
+    "clean": "tsc -b --clean"
   },
   "keywords": [
     "CSS-to-JS",
@@ -14,7 +16,7 @@
     "css",
     "style",
     "postcss-js",
-    "js object"
+    "object"
   ],
   "author": {
     "name": "Attila Max Ruf",
