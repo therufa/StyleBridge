@@ -1,6 +1,6 @@
 import postcss from "postcss";
 import postcssJs from "postcss-js";
 
-export default function styleBridge(style) {
+export default function convert(style) {
   return postcssJs.objectify(postcss.parse(style));
 }
