@@ -5,12 +5,16 @@ import convert from '../src/index'
 
 const style = fs.readFileSync(
   path.resolve(__dirname, './mockStyle.css'),
-  'utf8'
+  'utf-8'
 )
 
-test('convert() does convert', t => {
-  const result = convert(style)
-  console.log(JSON.stringify(result))
+const expected = fs.readFileSync(
+  path.resolve(__dirname, './mockStyle.json'),
+  'utf-8'
+)
 
-  t.truthy(result)
+test('convert() should convert doc', t => {
+  const result = convert(style)
+
+  t.deepEqual(JSON.parse(JSON.stringify(result)), JSON.parse(expected))
 })

@@ -3,7 +3,7 @@ import postcss from 'postcss'
 import postcssJs, { type CssInJs } from 'postcss-js'
 import { parse } from 'css-what'
 
-function convertRecursive (
+function _convert (
   styles: CssInJs,
   parsed: ReturnType<typeof parse>,
   val: CssInJs
@@ -49,6 +49,6 @@ export default function convert (style: string) {
 
   return Object.entries(styleObj).reduce<CssInJs>((styles, [key, val]) => {
     const parsed = parse(key)
-    return convertRecursive(styles, parsed, val)
+    return _convert(styles, parsed, val)
   }, {})
 }
