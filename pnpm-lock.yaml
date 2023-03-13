@@ -5,6 +5,7 @@ specifiers:
   '@types/postcss-js': ^4.0.0
   '@typescript-eslint/eslint-plugin': ^5.0.0
   ava: ^5.2.0
+  css-what: ^6.1.0
   eslint: ^8.36.0
   eslint-config-standard: ^17.0.0
   eslint-config-standard-with-typescript: ^34.0.0
@@ -17,6 +18,7 @@ specifiers:
   typescript: ^4.9.5
 
 dependencies:
+  css-what: 6.1.0
   postcss: 8.4.21
   postcss-js: 4.0.1_postcss@8.4.21
 
@@ -689,6 +691,11 @@ packages:
       shebang-command: 2.0.0
       which: 2.0.2
     dev: true
+
+  /css-what/6.1.0:
+    resolution: {integrity: sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==}
+    engines: {node: '>= 6'}
+    dev: false
 
   /currently-unhandled/0.4.1:
     resolution: {integrity: sha512-/fITjgjGU50vjQ4FH6eUoYu+iUoUKIXws2hL15JJpIR+BbTxaXQsMuuyjtNh2WqsSBS5nsaZHFsFecyw5CCAng==}

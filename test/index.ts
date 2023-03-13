@@ -10,7 +10,7 @@ const style = fs.readFileSync(
 
 test('convert() does convert', t => {
   const result = convert(style)
-  console.log(result)
+  console.log(JSON.stringify(result))
 
   t.truthy(result)
 })
