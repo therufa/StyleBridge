@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "css-what": "^6.1.0",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.31",
     "postcss-js": "^4.0.1"
   },
   "sideEffects": "false",
